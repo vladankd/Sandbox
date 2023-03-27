@@ -65,18 +65,27 @@ header {
   padding: 0.5em;
   border-radius: 0.5em;
 }
-
+.wrapper {
+  margin-left: -1.5em;
+  margin-right: -1.5em;
+}
+.container {
+  display: table;
+  border-spacing: 1.5em 0;
+  width: 100%;
+}
 main {
   display: block;
-  /* fis=xes IE bugs */
+  /* fixes IE bugs */
 }
 .main,
 .sidebar {
   background-color: var(--bg-color-main);
-  margin-top: 1em;
+  /* margin-top: 1em; */
   /* padding: 0.5em; */
   border-radius: 0.5em;
-  float: left;
+  /* float: left; */
+  display: table-cell;
 }
 .main {
   width: 70%;
@@ -84,6 +93,7 @@ main {
 
 .sidebar {
   padding: 1.5em;
-  width: calc(30% - 1.5em);
-  margin-left: 1.5em;
+  /* width: calc(30% - 1.5em); */
+  width: 30%;
+  /* margin-left: 1.5em; */
 }
