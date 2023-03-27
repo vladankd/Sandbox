@@ -1,0 +1,89 @@
+/* 
+======================
+Font imports
+======================
+*/
+@font-face {
+  font-family: "roboto";
+  src: url("../Assets/FONTS/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../Assets/FONTS/Roboto-Italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../Assets/FONTS/Roboto-Bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* 
+=======================
+Root styles and resets
+=======================
+*/
+:root {
+  /* Box sizing fix */
+  box-sizing: border-box;
+
+  /* Colors */
+  --bg-color-body: #eee;
+  --bg-color-header: #0072b0;
+  --bg-color-main: #fff;
+  --font-color-header: #f9eeee;
+
+  /* Fonts */
+  --main-font: helvetica, arial, sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.25em;
+  font-family: var(--main-font);
+  background-color: var(--bg-color-body);
+}
+
+/* 
+=================
+Elements styling 
+=================
+*/
+
+header {
+  background-color: var(--bg-color-header);
+  color: var(--font-color-header);
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+main {
+  display: block;
+  /* fis=xes IE bugs */
+}
+.main,
+.sidebar {
+  background-color: var(--bg-color-main);
+  margin-top: 1em;
+  /* padding: 0.5em; */
+  border-radius: 0.5em;
+  float: left;
+}
+.main {
+  width: 70%;
+}
+
+.sidebar {
+  padding: 1.5em;
+  width: calc(30% - 1.5em);
+  margin-left: 1.5em;
+}
