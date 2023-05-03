@@ -1,3 +1,57 @@
+/* 
+===============
+Font imports
+===============
+*/
+
+@font-face {
+    font-family: roboto;
+    src: url(../Assets/FONTS/Roboto-Regular-webfont.woff);
+    font-family: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: roboto;
+    src: url(../Assets/FONTS/Roboto-Bold-webfont.woff);
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: roboto;
+    src: url(../Assets/FONTS/Roboto-Italic-webfont.woff);
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* 
+===============
+Genereal setup
+===============
+*/
+
+:root {
+    /* Box sizing fix */
+    box-sizing: border-box;
+
+    /* Fonts */
+    --main-font: roboto;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    /* temporary bg color */
+    background-color: beige;
+}
+
 body {
+    font-size: 1.1250em;
+    font-family: var(--main-font);
+    /* temporary bg color */
     background-color: coral;
 }
+
