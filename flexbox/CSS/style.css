@@ -1,0 +1,83 @@
+:root {
+  box-sizing: border-box;
+
+  /* Clolors */
+  --main-body-color: #709b90;
+  --nav-links-color: #fff;
+  --nav-links-bg-color: #d76f25;
+  --nav-bg-color-light: #f1e8db;
+
+  --nav-bg-color-dark: #5f4b44;
+  /* --nav-links-bg-color: #cc6b5a; */
+  /* Fonts */
+  --main-font: arial, helvetica, sans-serif;
+}
+
+/* Global box sizing fix */
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.125em;
+
+  background-color: var(--main-body-color);
+  font-family: var(--main-font);
+  color: #fff;
+}
+
+/* Lobotomized Owl global margins setup */
+body * + * {
+  margin-top: 1.5em;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  /* temp bg color */
+  background-color: #725e91;
+  padding: 2em;
+}
+
+/* Navigation */
+
+.site-nav {
+  display: flex;
+  /* For safari 8 browser */
+  display: -webkit-flex;
+  /* for IE10 */
+  display: -ms-flexbox;
+
+  flex-wrap: wrap;
+  list-style-type: none;
+  /* padding-left: 0; */
+  padding: 0.5em;
+  background-color: var(--nav-bg-color-dark);
+  border-radius: 0.2em;
+}
+
+.site-nav > li {
+  /* padding: 0.5em; */
+  /* overrides lobotomized Owl global margins */
+  margin-top: 0;
+}
+
+.site-nav > li + li {
+  margin-left: 1.5em;
+}
+
+.site-nav > li > a {
+  /* display: inline-block; */
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: var(--nav-links-color);
+  background-color: var(--nav-links-bg-color);
+  /* border-radius: 0.2em; */
+}
+
+.site-nav > .nav-right {
+  margin-left: auto;
+}
